@@ -13,6 +13,13 @@
   </head>
 
   <body>
+  <nav class="navbar navbar-light" style="background-color: #337ab7;">
+  <form class="container-fluid justify-content-start">
+  <a class="navbar-brand" style="color: white;" href="#">Wiki-tastic</a>
+    <button class="btn btn-light me-2" type="button"><%= link_to 'Home', articles_path %></button>
+    <button class="btn btn-light me-2" type="button"><%= link_to 'New Article', new_article_path %></button>
+  </form>
+</nav>
     <%= yield %>
   </body>
 </html>
